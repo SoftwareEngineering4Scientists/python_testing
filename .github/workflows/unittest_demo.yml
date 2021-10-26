@@ -1,0 +1,19 @@
+name: Running unit tests for my_lib
+
+on:
+  push:
+    branch:
+      - main
+      
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+      - name: Setup Python 3.9
+        uses: action/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Run our unittest script
+        run: python my_lib_testing.py -v
