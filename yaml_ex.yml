@@ -1,0 +1,28 @@
+
+# Our favoriate fruits
+fruits:
+  - peaches
+  - plums
+  - grapes
+
+# MY favorite pastries
+pastries: [croissant, donut, danish]
+
+numbers:
+  integers: [5, 4, 3, 2, 1]
+  floats: 
+    - 2.0
+    - 1.0
+    - 0.0
+  str_num: "2.22"
+  
+booleans:
+  - True
+  - False
+  - yes
+  - no
+  
+multi: |
+  this will be
+  exactly interpreted
+  as you see it here
